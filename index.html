@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Andrew Cole Sturdevant - Senior Software Engineer - Resume</title>
+  <meta name="description" content="Resume of Andrew Cole Sturdevant, Senior Software Engineer specializing in full-stack development, React, Node.js, and TypeScript." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrew Cole Sturdevant",
+    "jobTitle": "Senior Software Engineer",
+    "email": "mailto:colesturdevant0@gmail.com",
+    "telephone": "(317) 453-9049",
+    "url": "https://sturdeac.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/sturdeac/",
+      "https://github.com/sturdeac"
+    ]
+  }
+  </script>
+  
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #0c0c0c;
+      --muted: #6b6b6b;
+      --accent: #d62f2f;
+      --panel-border: #111111;
+      --gap: 18px;
+      --max-width: 1000px;
+    }
+    *{box-sizing:border-box}
+    html,body{min-height:100%}
+    body {
+      margin: 0;
+      padding: var(--gap);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.35;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+    .sheet{
+      width:100%;
+      max-width:var(--max-width);
+      display:grid;
+      grid-template-columns: 300px 1fr;
+      gap: calc(var(--gap) * 1.5);
+    }
+    .panel{
+      border:4px solid var(--panel-border);
+      padding:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,0), rgba(0,0,0,0.01));
+    }
+    .left{
+      display:flex;
+      flex-direction:column;
+      gap:var(--gap);
+    }
+    .portrait{
+      height:160px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border:3px dashed var(--panel-border);
+      font-size:14px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+    .contact-list, .skills-list{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      font-size:13px;
+    }
+    .contact-label{
+      font-size:11px;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin-top: 0;
+      margin-bottom:6px;
+      letter-spacing:1px;
+    }
+    .skills-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+      font-size:13px;
+    }
+    .skill-pill {
+      border: 2px solid var(--accent);
+      padding: 6px 8px;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: .6px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      background-color: rgba(214, 47, 47, 0.1);
+    }
+    .main{
+      display:flex;
+      flex-direction:column;
+      gap:var(--gap);
+    }
+    .header-full {
+      width: 100%;
+      max-width: var(--max-width);
+      margin-bottom: var(--gap);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .name {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .title {
+      font-size: 18px;
+      text-transform: none;
+      color: var(--accent);
+      font-weight: 400;
+    }
+    h2.section-title{
+      margin:0 0 10px 0;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      color:var(--accent);
+    }
+    .job{
+      border-bottom:2px dashed rgba(0,0,0,0.06);
+      padding:10px 0;
+    }
+    .job .meta{
+      font-size:12px;
+      color:var(--muted);
+    }
+    .job .role{
+      font-weight:700;
+      font-size:15px;
+      margin-bottom:6px;
+    }
+    .job li {
+      margin-bottom: 4px;
+      line-height: 1.4;}
+    ul{margin:6px 0 0 18px;padding:0;font-size:13px}
+    .print-note {
+      margin-top: var(--gap);
+      font-size: 12px;
+      color: var(--muted);
+      width: 100%;
+      max-width: var(--max-width);
+      box-sizing: border-box;
+      border: 2px dashed rgba(0,0,0,0.06);
+      padding: 12px 18px;
+    }
+
+    @media (max-width:880px){
+      .sheet{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+    <!-- Full-width header panel -->
+  <header class="panel header-full">
+    <div class="name">Andrew Cole Sturdevant</div>
+    <div class="title">Senior Software Engineer</div>
+  </header>
+  <main class="sheet">
+    <!-- LEFT -->
+    <aside class="left">
+      <section class="panel">
+        <h3 class="contact-label">Contact</h3>
+        <div class="contact-list">
+          <a href="mailto:colesturdevant0@gmail.com">colesturdevant0@gmail.com</a>
+          <a href="tel:+13174539049">(317) 453-9049</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3 class="contact-label">Links</h3>
+        <div class="contact-list">
+          <a href="https://www.linkedin.com/in/sturdeac/">LinkedIn</a>
+          <a href="https://github.com/sturdeac">GitHub</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h3 class="contact-label">Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-pill">React</div>
+          <div class="skill-pill">TypeScript</div>
+          <div class="skill-pill">Next.js</div>
+          <div class="skill-pill">Java</div>
+          <div class="skill-pill">Node.js</div>
+          <div class="skill-pill">Express</div>
+          <div class="skill-pill">REST APIs</div>
+          <div class="skill-pill">CI / CD</div>
+          <div class="skill-pill">AWS</div>
+          <div class="skill-pill">Automated Testing</div>
+          <div class="skill-pill">UI/UX Collaboration</div>
+          <div class="skill-pill">Git / Code Review</div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- RIGHT -->
+    <section class="main">
+      <div class="panel">
+        <h2 class="section-title">Objective</h2>
+        <p>
+          Results-driven software engineer with strong skills in full-stack development, including Node.js, React, and TypeScript. Seeking a full-time role to contribute to building user-centric, scalable web applications. Passionate about solving complex problems and delivering high-quality solutions in collaborative environments.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2 class="section-title">Education</h2>
+        <p>
+          <strong>Rose-Hulman Institute of Technology</strong><br>
+          B.S. Computer Engineering (Major),<br>
+          <small>Computer Science (Minor)</small><br>
+          Graduated May 2020
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2 class="section-title">Experience</h2>
+
+        <article class="job">
+          <div>
+            <div class="role">Senior Software Engineer — Anthology</div>
+            <div class="meta">Indianapolis, IN (Remote) · June 2020 - Present</div>
+            <ul>
+              <li>Build and enhance Ultra UI features in React and TypeScript, collaborating closely with UX and design teams to deliver accessible and intuitive interfaces for the flagship LMS product.</li>
+              <li>Extend and maintain Java API endpoints to support new front-end functionality, with occasional creation of new endpoints as product requirements evolve.</li>
+              <li>Review pull requests for both UI and API code to maintain high standards for performance, accessibility, and maintainability.</li>
+              <li>Previously implemented and improved enterprise microservices handling thousands of requests per minute across multiple AWS regions, including migration to AWS ECS Fargate using CDK.</li>
+              <li>Created and maintained robust automated testing suites in JavaScript and Java, including unit tests, mocking, and end-to-end tests.</li>
+              <li>Worked cross-functionally with product managers and other engineering teams to ensure features met functional and performance requirements without regressions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div>
+            <div class="role">Software Engineer Intern — Blackbaud</div>
+            <div class="meta">Charleston, SC · Summer 2019</div>
+            <ul>
+              <li>Developed .NET API endpoints and webservices in C#.</li>
+              <li>Built AngularJS single page apps integrated with .NET APIs.</li>
+              <li>Created unit tests in JS and C# with mocking libraries.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div>
+            <div class="role">Software Engineer (PT) — Neoteric Hovercraft Inc.</div>
+            <div class="meta">Terre Haute, IN · May 2018 - May 2019</div>
+            <ul>
+              <li>Rebuilt company website using modern web practices.</li>
+              <li>Automated employee time tracking via Android app, saving ~15 hours labor/day.</li>
+              <li>Promoted from intern to part-time engineer while pursuing degree.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div>
+            <div class="role">Technical Intern — NinjaZone</div>
+            <div class="meta">Carmel, IN · Summer 2017</div>
+            <ul>
+              <li>Improved WordPress UX for customers.</li>
+              <li>Upgraded and created custom plugins for backend efficiency.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div>
+            <div class="role">Student Employee — Rose-Hulman EIT Department</div>
+            <div class="meta">Terre Haute, IN · March 2017 - May 2020</div>
+            <ul>
+              <li>Assisted students, faculty, and staff with computer issues.</li>
+              <li>Installed and troubleshooted educational and industry software for large deployments.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="panel print-note">Last updated: Aug 11, 2025</footer>
+</body>
+</html>

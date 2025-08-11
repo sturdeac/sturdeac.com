@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sturdeac.com/sitemap.xml
