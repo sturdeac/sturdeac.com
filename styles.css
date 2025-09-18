@@ -1,0 +1,253 @@
+/* ================================
+   Global Variables
+================================= */
+:root {
+  --bg: #f1eded;
+  --fg: #0c0c0c;
+  --muted: #6b6b6b;
+  --accent: #d62f2f;
+  --panel-border: #111111;
+  --gap: 18px;
+  --max-width: 1000px;
+}
+
+/* ================================
+   Base Reset & Typography
+================================= */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: var(--gap);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    monospace;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* ================================
+   Layout
+================================= */
+.sheet {
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: calc(var(--gap) * 1.5);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* ================================
+   Panels
+================================= */
+.panel {
+  border: 2px solid var(--panel-border);
+  padding: 18px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.portrait {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed var(--panel-border);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ================================
+   Contact & Skills
+================================= */
+.contact-list,
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.contact-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 6px;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.skill-pill {
+  border: 2px solid var(--accent);
+  padding: 6px 8px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  background-color: rgba(214, 47, 47, 0.1);
+}
+
+/* ================================
+   Header
+================================= */
+.header-full {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-bottom: var(--gap);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+/* ================================
+   Sections
+================================= */
+h2.section-title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+}
+
+/* ================================
+   Jobs
+================================= */
+.job {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.06);
+  padding: 10px 0;
+}
+
+.job:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.job .meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.job .role {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.job li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+  font-size: 13px;
+}
+
+/* ================================
+   Footer
+================================= */
+.print-note {
+  margin-top: var(--gap);
+  font-size: 12px;
+  color: var(--muted);
+  width: 100%;
+  max-width: var(--max-width);
+  border: 2px dashed rgba(0, 0, 0, 0.06);
+  padding: 12px 18px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Responsive
+================================= */
+@media (max-width: 880px) {
+  .sheet {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   Dark Mode
+================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1b1b;
+    --fg: #f0f0f0;
+    --muted: #a0a0a0;
+    --accent: #ff4d4d;
+    --panel-border: #f0f0f0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+  }
+
+  .panel {
+    background: #272727;
+  }
+
+  .job {
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+  }
+
+  .print-note {
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+  }
+}
